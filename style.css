@@ -1,17 +1,22 @@
-:root{
-    --white:#F6F1F1;
-    --lighblue:#AFD3E2;
-    --blue:#19A7CE;
-    --darkblue:#146C94;
+:root {
+    --white: #F6F1F1;
+    --lighblue: #AFD3E2;
+    --blue: #19A7CE;
+    --darkblue: #146C94;
 }
-@font-face  {
+
+@font-face {
     font-family: 'montserrat';
     src: url(font/Montserrat/static/Montserrat-Regular.ttf);
 }
+@font-face {
+    font-family: 'bold';
+    src: url(font/Montserrat/static/Montserrat-Bold.ttf);
+}
 
 
 
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,12 +28,12 @@ body{
     align-items: center;
     background-color: transparent;
     padding: 10px 20px;
-    
+
 }
 
 
 .logo img {
-    height: 55px; 
+    height: 55px;
 }
 
 
@@ -49,7 +54,7 @@ body{
 
 .volunteer {
     text-align: right;
-   
+
     font-size: 20px;
     margin-right: 15px;
     background-color: var(--darkblue);
@@ -58,13 +63,15 @@ body{
     margin-right: 5px;
 
 }
-.volunteer a{
+
+.volunteer a {
     text-decoration: none;
     color: var(--white);
     font-family: 'montserrat';
 
 }
-.volunteer{
+
+.volunteer {
     border-radius: 3px;
     border: 1px solid var(--darkblue);
     transition: all 0.2s;
@@ -73,10 +80,8 @@ body{
 
 
 @media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
     
+
     .contact-info {
         text-align: center;
         margin-top: 10px;
@@ -90,7 +95,7 @@ body{
 
 
 .dropdown-content {
-    
+
     display: none;
     position: absolute;
     background-color: var(--white);
@@ -98,7 +103,7 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 3px;
-    
+
 }
 
 
@@ -115,15 +120,15 @@ body{
     background-color: var(--darkblue);
     color: var(--white);
     transition: all 0.2s;
-    
+
 }
 
 
 .nav-links .dropdown:hover .dropdown-content {
     display: block;
-    
-    
-   
+
+
+
 
 }
 
@@ -140,22 +145,126 @@ body{
 .nav-links a:nth-child(7):hover .dropdown-content {
     left: 100%;
 }
-.volunteer:hover a{
-   color: var(--darkblue);
+
+.volunteer:hover a {
+    color: var(--darkblue);
 }
+
 .volunteer:hover {
     background: transparent;
+
+}
+
+.home {
+    height: 65vh;
+    overflow: hidden;
+    
+    overflow-y: hidden;
     
 }
-.home{
-    height: 100vh;
-    overflow: hidden;
-}
-.video-back{
+
+.video-back {
     position: absolute;
     width: 100%;
     top: 0;
     z-index: -1;
-    bottom: 0;
-    height: 100vh;
+    
+
 }
+.home-text{
+    margin: 20vh 15vh;
+    width: 800px;
+   
+}
+.home-text h1{
+    font-size: 50px;
+    font-family: 'bold';
+    color: var(--white);
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+.grid-home{
+    background-color: rgba(0, 0, 0, 0.4);
+    height:23vh ;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.latest-update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+.learn-more{
+    padding: 25px 50px;
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: black;
+    text-decoration: none;
+    font-family: 'bold';
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 2rem;
+    box-shadow: 10px  black;
+    transition: all 0.3s;
+}
+.learn-more:hover{
+    background-color: transparent;
+    color: var(--white);
+    
+}
+.video{
+    padding: 15px;
+}
+.story{
+    padding: 15px;
+}
+.press-release {
+    padding: 15px;
+}
+.video a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Montserrat';
+}
+.story a{
+    
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Montserrat';
+}
+.press-release a{
+    
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Montserrat';
+}
+.video label{
+    color: var(--darkblue);
+    font-size: 25px;
+    font-family: 'bold';
+    
+}
+.story label{
+    color: var(--darkblue);
+    font-size: 25px;
+    font-family: 'bold';
+}
+.press-release label{
+    color: var(--darkblue);
+    font-size: 25px;
+    font-family: 'bold';
+}
+.about{
+    height: 100vh;
+    background-color: var(--white);
+}
+
+
+
+
