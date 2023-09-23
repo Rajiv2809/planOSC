@@ -14,3 +14,8 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => {
     observer.observe(el); 
 });
+
+window.addEventListener("scroll",function(){
+    var header = this.document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
